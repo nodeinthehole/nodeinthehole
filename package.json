@@ -1,6 +1,6 @@
 {
     "name": "nodeinthehole",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Putting the 'mate' in automate!",
     "bin": {
         "nodeinthehole": "index.js"
