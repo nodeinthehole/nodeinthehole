@@ -1,0 +1,22 @@
+{
+    "name": "nodeinthehole",
+    "version": "1.0.3",
+    "description": "Putting the 'mate' in automate!",
+    "bin": {
+        "nodeinthehole": "index.js"
+    },
+    "dependencies": {
+        "cli-welcome": "^2.2.2"
+    },
+    "keywords": [
+        "punny",
+        "automation"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "repository": "nodeinthehole/nodeinthehole",
+    "author": {
+        "name": "Tom Davies",
+        "email": "nodeinthehole88@gmail.com"
+    }
+}
