@@ -2,23 +2,32 @@
     "name": "nodeinthehole",
     "version": "1.0.4",
     "description": "Putting the 'mate' in automate!",
-    "bin": {
-        "nodeinthehole": "index.js"
-    },
-    "dependencies": {
-        "chalk": "^4.1.0",
-        "cli-welcome": "^2.2.2",
-        "log-symbols": "^4.0.0"
-    },
-    "keywords": [
-        "punny",
-        "automation"
-    ],
     "license": "MIT",
     "main": "index.js",
     "repository": "nodeinthehole/nodeinthehole",
     "author": {
         "name": "Tom Davies",
         "email": "nodeinthehole88@gmail.com"
+    },
+    "keywords": [
+        "punny",
+        "automation"
+    ],
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "cli-welcome": "^2.2.2",
+        "eslint": "^7.8.1",
+        "eslint-config-node": "^4.1.0",
+        "eslint-config-prettier": "^7.2.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-unicorn": "^22.0.0",
+        "log-symbols": "^4.0.0"
+    },
+    "scripts": {
+        "test": "node test.js"
+    },
+    "bin": {
+        "nodeinthehole": "index.js"
     }
 }

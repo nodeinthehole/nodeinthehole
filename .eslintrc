@@ -1,0 +1,31 @@
+{
+  "env":{
+     "commonjs":true,
+     "es6":true,
+     "node":true
+  },
+  "extends":[
+     "prettier",
+     "plugin:unicorn/recommended",
+     "plugin:import/errors",
+     "plugin:import/warnings",
+     "eslint:recommended"
+  ],
+  "plugins":[
+     "prettier"
+  ],
+  "rules":{
+     "prettier/prettier":"error",
+     "import/no-unresolved":[
+        2,
+        {
+           "commonjs":true,
+           "amd":true
+        }
+     ],
+     "import/named":2,
+     "import/namespace":2,
+     "import/default":2,
+     "import/export":2
+  }
+}
