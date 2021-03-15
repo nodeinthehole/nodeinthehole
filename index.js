@@ -1,17 +1,22 @@
 #!/usr/bin/env node
-const chalk = require("chalk");
-const sym = require("log-symbols");
-const { red: error, yellow: warning, green: success, blue: info } = chalk;
+const handleError = require("cli-handle-error");
+const cli = require("./utils/cli");
 const init = require("./utils/init");
+const data = require("./utils/data");
 
 (() => {
   init();
-  // Promise.reject(new Error("FFS Tom"));
+  const { args } = cli();
+  console.log(args);
+  // const error_ = new Error(`ffs tom`);
+  const error_ = undefined;
+  handleError(`Failed while building on step #1`, error_);
 
-  console.log(`
-  ${sym.error} ${error("error")}
-  ${sym.success} ${success("success")}
-  ${sym.warning} ${warning("warning")}
-  ${sym.info} ${info("info")}
-  `);
+  if (args.messages) console.log(data.messages);
+  if (args.blacklistDirectories) {
+    console.log("blacklisting");
+    args.blacklistDirectories.forEach((directory) => {
+      console.log(`\t ${directory}`);
+    });
+  }
 })();
